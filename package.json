@@ -1,0 +1,11 @@
+{
+  "name": "timestamp microservice freecodecamp",
+  "version": "0.0.0",
+  "description": "A simple express router app for timestamp microservice app for freecodecamp for more details visit https://www.freecodecamp.com/challenges/timestamp-microservice",
+  "main": "server.js",
+  "repository": "",
+  "author": "Nimit Khandelwal <nimitkhandelwal7@gmail.com>",
+  "dependencies": {
+    "express": "~3.2.4"
+  }
+}

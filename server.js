@@ -31,7 +31,7 @@ app.get("/:data",function(req,res){
 
 
 // Listen to this Port
-app.listen(process.env.Port||8080,function(){
+app.listen(process.env.PORT ||8080,function(){
   console.log("Live at Port 8080");
 });
 

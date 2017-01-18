@@ -10,11 +10,15 @@ var app = express();
 var monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
+app.get('/',function(req,res){
+   res.json({"unix" : null,"date":null}); 
+});
 app.get("/:data",function(req,res){
   if(isNaN(req.params.data)) {
+    
     res.json({"unix" : Math.round(new Date(req.params.data).getTime()/1000),"date":req.params.data});    
   }
-  else{
+  else {
     var d=new Date(Number(req.params.data) * 1000);
     res.json({"unix" : req.params.data,"date":(monthNames[d.getMonth()]+" "+d.getDate()+" "+d.getFullYear())});    
 
@@ -27,7 +31,7 @@ app.get("/:data",function(req,res){
 
 
 // Listen to this Port
-app.listen(process.env.PORT || 3000,function(){
+app.listen(3000,function(){
   console.log("Live at Port 3000");
 });
 

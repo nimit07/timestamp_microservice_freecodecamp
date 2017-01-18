@@ -31,7 +31,7 @@ app.get("/:data",function(req,res){
 
 
 // Listen to this Port
-app.listen(3000,function(){
+app.listen(process.env.Port||3000,function(){
   console.log("Live at Port 3000");
 });
 

@@ -1,22 +1,20 @@
-
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# TIMESTAMP MICROSERVICE
 
 
-Welcome to your Node.js project on Cloud9 IDE!
+Welcome to Freecodecamp's  Node.js api task project TIMESTAMP MICROSERVICE!
 
-This chat example showcases how to use `socket.io` with a static `express` server.
 
 ## Running the server
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
 
-2) Alternatively you can launch the app from the Terminal:
 
+1) you can launch the app from the Terminal:
+    $ npm install
     $ node server.js
 
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+url routes
+
+1) / => response:{"unix": null,"date": null}
+2) /1450137600 => response:{"unix": "1450137600","date": "December 15 2015"}
+1) /December%2015,%202015 => response:{"unix": "1450137600","date": "December 15 2015"}
+    
